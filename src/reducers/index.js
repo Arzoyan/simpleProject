@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-// import something from  somewhere 
+import example from "./example";
 
 const rootReducers = combineReducers({
-    // something , or  gago: something
+    example,
 })
 
 export default rootReducers;

@@ -1,22 +1,21 @@
-
-export const actions = {
+export const actionTypes = {
     SOMETHING: "SOMETHING",
-}
+};
 
 const intState = {
-    data: null
-}
+    data: [{data: 9999}]
+};
 
-const example = (state = intState, { action, payload }) => {
+const example = (state = intState, {action, payload}) => {
 
     switch (action) {
 
-        case action.SOMETHING: {
-            // do somthing whit state 
+        case actionTypes.SOMETHING: {
             state.data = payload;
             return state
         }
-        default: return state
+        default:
+            return state
     }
 
 }

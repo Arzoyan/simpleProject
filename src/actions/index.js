@@ -1,6 +1,6 @@
-import { actions } from "../reducers/example";
+import { actionTypes } from "../reducers/example";
 
 export const something = (data) => {
-    return { action: actions.SOMETHING, payload: data };
+    return { action: actionTypes.SOMETHING, payload: data };
 }
 
